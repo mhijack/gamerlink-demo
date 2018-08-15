@@ -6,11 +6,12 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showModal: true
+            showModal: false
         }
     }
 
     handleSubmit = event => {
+        alert("Welcome to GamerLink!");
         event.preventDefault();
     }
 
@@ -38,9 +39,9 @@ class Navbar extends Component {
                             alt="logo"
                         />
                     </a>
-                    <button onClick={this.openModal} className="button">Claim your account</button>
+                    <button onClick={this.openModal} className="nav-button button">Claim your account</button>
                 </div>
-                <Modal showModal={this.state.showModal} closeModal={this.closeModal} />
+                <Modal showModal={this.state.showModal} closeModal={this.closeModal} handleSubmit={this.handleSubmit} />
             </div>
         );
     }

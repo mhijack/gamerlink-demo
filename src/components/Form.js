@@ -15,11 +15,11 @@ const Form = props => (
             </div>
             <div className="form-group">
                 <label htmlFor="email">Email</label>
-                <input name="email" type="text" placeholder="email" />
+                <input name="email" type="text" placeholder="email" autoComplete="off" />
             </div>
 
             <div className="form-group">
-                <button className="button">Register</button>
+                <button className="form-button button">Register</button>
             </div>
         </form>
     </div>

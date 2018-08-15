@@ -12,7 +12,7 @@ const Modal = props => {
                 }}
             >
                 <div className="modal" onClick={props.closeModal} />
-                <Form />
+                <Form handleSubmit={props.handleSubmit} />
             </div>
         );
     } else {
